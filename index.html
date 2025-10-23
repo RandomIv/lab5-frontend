@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №5 - Варіант 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Завдання 1: Форма валідації</h1>
+    <form id="validationForm">
+        <div class="form-group">
+            <label for="pib">ПІБ (формат: Прізвище.І.Б.):</label>
+            <input type="text" id="pib" name="pib" placeholder="Іванишин.О.О.">
+            <span class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="idcard">ID-card (формат: ТТ №ЧЧЧЧЧЧ):</label>
+            <input type="text" id="idcard" name="idcard" placeholder="КВ №987654">
+            <span class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="faculty">Факультет:</label>
+            <input type="text" id="faculty" name="faculty" placeholder="ФІОТ">
+            <span class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="birthdate">Дата народження (формат: ЧЧ.ЧЧ.ЧЧЧЧ):</label>
+            <input type="text" id="birthdate" name="birthdate" placeholder="10.04.2006">
+            <span class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Адреса (формат: м. Назва):</label>
+            <input type="text" id="address" name="address" placeholder="м. Київ">
+            <span class="error-message"></span>
+        </div>
+
+        <button type="submit">Перевірити</button>
+    </form>
+
+    <h1>Завдання 2: Таблиця 6x6</h1>
+    <p>Наведіть на клітинку 9 для зміни кольору, клік - вибір кольору з палітри, подвійний клік - зміна кольору клітинок в стовпці через одну</p>
+
+    <div class="color-picker-container">
+        <label for="colorPicker">Виберіть колір:</label>
+        <input type="color" id="colorPicker" value="#ff0000">
+    </div>
+
+    <table id="mainTable"></table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
